@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-reusable-component';
-
+  totalCount = 0;
   data1 = [{
     name : 'Sam Johnson',
     dept : 'Electrical'
@@ -29,4 +29,9 @@ export class AppComponent {
     name : 'Lasker',
     dept : 'Biology'
   }];
+
+  calCount(count){
+    this.totalCount = this.totalCount + count;
+  }
+
 }

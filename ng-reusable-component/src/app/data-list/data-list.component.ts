@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-data-list',
@@ -7,8 +7,10 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class DataListComponent implements OnInit {
 
+
   @Input() data;
   @Input() showCount = false;
+  @Output() calCount = new  EventEmitter<Number>();
 
   // data = [{
   //   name : 'Sam Johnson',
