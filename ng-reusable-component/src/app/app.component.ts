@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-reusable-component';
+
+  data1 = [{
+    name : 'Sam Johnson',
+    dept : 'Electrical'
+  },{
+    name : 'Roy Thomas',
+    dept : 'Mechanical'
+  },{
+    name : 'Jim Lasker',
+    dept : 'Medical'
+  }];
+
+  data2 = [{
+    name : 'Johnson',
+    dept : 'Physics'
+  },{
+    name : 'Thomas',
+    dept : 'Chemistry'
+  },{
+    name : 'Lasker',
+    dept : 'Biology'
+  }];
 }
